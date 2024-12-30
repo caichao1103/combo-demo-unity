@@ -100,7 +100,7 @@ def getDemoEndpoint() {
 pipeline {
     agent {
         node {
-            label 'combo-demo:ios'
+            label 'mac-8 (M1)'
         }
     }
     options {
