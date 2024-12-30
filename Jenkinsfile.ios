@@ -158,6 +158,7 @@ pipeline {
         stage('Clean and Setup') {
             steps {
                 script {
+                    assert env.GAME_ID
                     if (params.CLEAN_WS) {
                         cleanWs()
                     }
